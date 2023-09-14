@@ -1,0 +1,65 @@
+User: what's the weather now
+User: what is 2 + 2
+User: stars
+
+
+Date:2023-08-31 | Time:23:21:30
+User: explain computers shortly
+Assistant: Echo says:Computers are machines that follow a set of instructions, called a program, to perform a specific function.
+
+Date:2023-08-31 
+ : Time:23:21:30
+User: explain briefly consciousness
+Assistant: Echo says:Consciousness refers to the state of being aware of and able to think, feel and perceive. It is the ability to be aware of your surroundings and make decisions. It is the ability to be aware of your own thoughts and feelings and
+
+ 
+Hello World!: Date: 2023-08-31 | Time: 23:38:49 
+ 
+User: you're me
+Assistant: Echo says:Oh, I'm sorry. I thought you were someone else.
+
+Hello World!: Date: 2023-08-31 | Time: 23:41:44 
+ 
+User: explain briefly quantum entanglement
+Assistant: Echo says:When two particles are quantum mechanically entangled, their states are linked together such that measuring one particle affects the state of the other.
+
+
+Hello World!: Date: 2023-08-31 | Time: 23:44:35 
+ 
+User: explain torch for 13 year old
+Assistant: Echo says:A torch is a tool that uses a flame to create heat or light.
+
+Hello World!: Date: 2023-08-31 | Time: 23:44:35 
+ 
+User: explain torch in Python but very briefly for a 16-year old
+Assistant: Echo says:Torch is a Python library that provides high-level features such as tensor computation and deep neural networks.
+
+ Hello World!: Date: 2023-09-03 | Time: 00:30:07 
+ 
+User: tell me what's the weather
+Assistant: Echo says:like in Los Angeles
+
+The weather in Los Angeles is sunny and warm.
+
+ Hello World!: Date: 2023-09-03 | Time: 00:30:07 
+ 
+User: what is quantum physics
+Assistant: Echo says:Quantum physics is a branch of physics that explores the very small world of particles at the atomic and subatomic level. In quantum physics, the rules of classical physics no longer always apply. This means that subatomic particles can exist in more
+
+
+ Hello World!: Date: 2023-09-03 | Time: 00:38:09 
+ 
+User: tell me what is a Raspberry Pi drone
+Assistant: Echo says:A raspberry pi drone is a remote controlled flying drone that is controlled using a raspberry pi computer.
+
+ Hello World!: Date: 2023-09-03 | Time: 00:40:21 
+ 
+User: is the rate in dollars for the API of open AI
+Assistant: Echo says:, it is is not completely clear how much it costs
+According to their website, pricing for the OpenAI API starts at $0.10 per 1,000 queries.
+
+ Hello World!: Date: 2023-09-03 | Time: 00:42:49 
+ 
+User: how far is the moon from the earth
+Assistant: Echo says:The moon is 238,900 miles from the Earth.
+

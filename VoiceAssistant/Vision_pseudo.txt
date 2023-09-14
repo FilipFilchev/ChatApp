@@ -1,0 +1,126 @@
+PSEUDO CODE:
+    
+    MODULE VisionAssistant:
+
+    IMPORT necessary libraries (like speech recognition, text-to-speech, web browser, etc.)
+
+    INITIALIZE Global constants like WAKE_WORD, CONVERSATION_LOG, SEARCH_WORDS, etc.
+
+    FUNCTION InitializeAssistant:
+        - Setup speech recognition
+        - Setup text-to-speech engine
+        - Maybe initialize other settings like volume, thresholds, etc.
+
+    FUNCTION ListenToUser:
+        - Capture audio from the microphone
+        - Try to convert the audio to text using a speech recognition service
+        - RETURN the converted text
+
+    FUNCTION SpeakToUser(message):
+        - Use the text-to-speech engine to say the given message
+
+    FUNCTION LogConversation(message):
+        - Add the message to the conversation log with date and time
+
+    FUNCTION HandleOpenCommands(command):
+        - Open various applications or websites based on command
+        - Speak appropriate response to user
+
+    FUNCTION HandleTimeQueries(command):
+        - Respond with current date, time or other date-related information
+
+    FUNCTION HandleMathQueries(command):
+        - Parse the command to find operands and operators
+        - Perform the math operation
+        - Respond with the result
+
+    FUNCTION HandleWeatherQueries(command):
+        - Get weather information based on location and command
+        - Respond with the weather details
+
+    FUNCTION HandleSearchQueries(command):
+        - Open a browser with a search query related to the command
+
+    FUNCTION AnalyzeCommand(command):
+        - Identify the type of the command using keywords or patterns
+        - Call the appropriate handler function based on the identified type
+
+    FUNCTION MainLoop:
+        - Continuously listen for the wake word
+        - If wake word is detected, listen for the command
+        - Analyze the command and perform the appropriate action
+        - Log the conversation
+        - Maybe handle exceptions or errors
+
+
+    CALL MainLoop
+
+OR USE OOP INTEGRATING THE CHAT FUNCTIONALITY INTO A CLASS 
+You can execute the response generation inside or outside the main while loop (diff approaches)
+
+
+
+#import libraries...like speach_recognition as sr && pyttsx3
+
+# Speech Recognition Constants
+recognizer = sr.Recognizer()
+microphone = sr.Microphone()
+
+# Python Text-to-Speech (pyttsx3) Constants
+engine = pyttsx3.init()
+engine.setProperty('volume', 1.0)
+
+
+# Establish serial connection for arduino board
+# try:
+#     ser = serial.Serial('com3', 9600)
+#     LED = True
+# except serial.SerialException:
+#     print("No LED connected. There will be no lighting support.")
+#     # If the LEDs aren't connected this will allow the program to skip the LED commands.
+#     LED = False
+#     pass
+
+
+class Vision:
+    def __init__(self):
+        self.recognizer = sr.Recognizer()
+        self.microphone = sr.Microphone()
+
+    # Listening commands after the wake word has been said
+    # def listen(self, recognizer, microphone, response):
+    #     try:
+    #         with microphone as src:
+    #             print("Awaiting commands...")
+    #             #noice reduction 
+    #             recognizer.adjust_for_ambient_noise(src)
+    #             recognizer.dynamic_energy_threshold = 3000
+    #             # Reduce the time out 
+    #             audio = recognizer.listen(src, timeout=5.0)
+    #             command = recognizer.recognize_google(audio)
+    #             v.remember(command)
+    #             return command.lower()
+
+    
+    # Used to listen for the wake word
+ """   def listen(self, recognizer, microphone):
+        while True:
+            try:
+                with microphone as source:
+                    print("Listening...")
+                    recognizer.adjust_for_ambient_noise(source)
+                    recognizer.dynamic_energy_threshold = 3000
+                    audio = recognizer.listen(source, timeout=5.0)
+                    response = recognizer.recognize_google(audio)
+
+                    if response == WAKE:
+
+                        if LED:
+                            listening_byte = "L"  # L matches the Arduino sketch code for the blue color
+                            ser.write(listening_byte.encode("ascii"))  # encodes and sends the serial byte
+                            speak("How can I help you?")
+                        return response.lower()
+                    ....
+"""
+    
+    

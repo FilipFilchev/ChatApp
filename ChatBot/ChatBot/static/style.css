@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background: #1e1d1d;
+}
+
+*, html {
+    --primaryGradient: linear-gradient(93.12deg, #34a8a4 0.52%, #2196F3 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #34a8a4 -2.14%, #2196F3 99.69%);
+    --primaryBoxShadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    --secondaryBoxShadow: 0px -8px 20px rgba(0, 0, 0, 0.08);
+    --primary: #2196F3;
+}
+
+.chatbox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    width: 350px;
+    height: 450px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+}
+
+.chatbox__button {
+    text-align: right;
+}
+
+.send__button {
+    padding: 6px;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.chatbox__header {
+    background: var(--primaryGradient);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+.chatbox__image--header {
+    margin-right: 10px;
+}
+
+.chatbox__heading--header {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.chatbox__description--header {
+    font-size: .9rem;
+    color: white;
+}
+
+.chatbox__messages {
+    padding: 0 20px;
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    margin-top: 10px;
+    padding: 8px 12px;
+    max-width: 70%;
+    border-radius: 15px;
+}
+
+.messages__item--visitor {
+    background: #A5D6A7;
+    color: #333;
+    margin-right: auto;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.messages__item--operator {
+    background: var(--primary);
+    color: white;
+    margin-left: auto;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: var(--secondaryGradient);
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 20px;
+}
+
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 19px 24px;
+    border-radius: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.chatbox__send--footer {
+    color: white;
+    font-weight: 600;
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 10px 15px;
+    background: var(--primaryGradient);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chatbox__button button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.suggested-inputs {
+    background-color: #e0f5fc; /* light blue background */
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 10px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-inputs p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.suggested-inputs ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.suggested-inputs li {
+    background-color: #ffffff; /* white balloons */
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggested-inputs li:hover {
+    background-color: #d9ecfa; /* slightly darker blue on hover */
+}
+
+
+#toggleMode {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#toggleMode:hover {
+    background-color: #555;
+}

@@ -1,0 +1,16 @@
+pip install openai
+pip install pyttsx3
+pip install speech_recognition
+brew install portaudio - #dependecie for pyaudio
+pip install pyaudio
+
+change the nsss.py initialisation of the class and import the NS libraries 
+# class NSSpeechDriver(NSObject):
+#     @objc.python_method
+#     def initWithProxy(self, proxy):
+#         # self = super(NSSpeechDriver, self).init()
+#         self = objc.super(NSSpeechDriver, self).init()
+
+
+import model of choice like ChatGPT; Falcon, Pythia, Jarvis ..GPT 
+- train it or if pretraiend just run & deploy!

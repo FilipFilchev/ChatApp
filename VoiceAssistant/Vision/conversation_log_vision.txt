@@ -1,0 +1,14 @@
+2023-09-13 15:23:59 - User: tell a joke
+2023-09-13 15:23:59 - Vision: You are funny!
+2023-09-13 15:24:51 - User: destroy the world
+2023-09-13 15:24:51 - Vision: Sorry, can't do this yet.
+2023-09-13 15:25:36 - User: what is your name
+2023-09-13 15:25:36 - Vision: I am your voice assistant, Vision.
+2023-09-13 15:50:15 - User: What is 2 + 2
+2023-09-13 15:50:15 - Vision: The answer is 4
+2023-09-13 15:50:49 - User: What is 2 / 2
+2023-09-13 15:50:49 - Vision: The answer is 1.0
+2023-09-13 15:51:34 - User: What is 13 remainder 4
+2023-09-13 15:51:34 - Vision: The answer is 1.0 
+
+
