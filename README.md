@@ -1,4 +1,4 @@
 # ChatApp
-- Powered by React ChatApp with integrated Chatbot and secure LogIn
+- Powered by React ChatApp with integrated Chatbot/VoiceAssistant and secure LogIn
 - Voice Assistant in python (using LLMs + custom commands)
-- ChatBot API with Falcon Open Source LLM (HuggingFace)
+- ChatBot - ManualSet & API with Open Source LLM (HuggingFace)
