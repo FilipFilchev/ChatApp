@@ -1,4 +1,4 @@
-#Voice Assistant Echo powered by pyttsx3 (text to speech engine) and speech recognition engine
+#Voice Assistant Echo powered by pyttsx3 (text to speech engine) and OpenAi GPT (more complex version in ../Vision)
 import pyttsx3
 import speech_recognition as sr
 import openai
