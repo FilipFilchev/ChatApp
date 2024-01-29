@@ -3,6 +3,8 @@
 - Voice Assistant in python (using LLMs + custom commands)
 - ChatBot - ManualSet & API with Open Source LLM (HuggingFace)
 
+![login](login.png)
+
 ## Structure and features of the App:
 - Authentication: Utilizes Firebase Authentication to manage user login sessions. It supports Google login and email/password-based authentication.
 - Real-time Chat room: Uses Firebase Firestore to store and retrieve chat messages in real-time and keep the chat history for members of the chatnique displaying their avatars as well (all data is protected on google firestore).
@@ -11,6 +13,11 @@
 - Responsive UI
 - Matrix Rain Effect: A visual effect displayed on the authentication screen, created by dynamically adding "raindrop" 1s & 0s elements to the DOM.
 - Scalable: Able to implement larger LM but on the cloud -> paid
+
+![app](app.png)
+
+![bot](bot.png)
+
 
 ### Init:
 ```
