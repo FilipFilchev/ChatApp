@@ -1,4 +1,4 @@
-[chatmodels](chatmodels.png)
+[chatmodels](chatmodels1.png)
 
 # RAG models are the best!
 ## RAG is a way to get responses from LLMs like ChatGPT while supplying your own data.
