@@ -1,4 +1,4 @@
-#Utilities of Natural Language Toolkit
+#Utilities for natural language processing 
 import numpy as np
 import nltk
 # nltk.download('punkt')

@@ -5,27 +5,25 @@ import os
 import torch
 
 from model import NeuralNet
-#tokenizer init. 
 from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 file_path = os.path.join(os.path.dirname(__file__), 'intents.json')
 #file_path allocated
-with open('intents.json', 'r') as json_data:
+with open('/Users/mac/Desktop/GIT/ToCommit/ChatAssistant+Bot+API/ChatBot/ChatBot/intents.json', 'r') as json_data:
     intents = json.load(json_data)
 
-#data loading...
-FILE = "./financialdata.pth"
+FILE = "./filipdata.pth"
 data = torch.load(FILE)
-#layers and params
+
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
 all_words = data['all_words']
 tags = data['tags']
 model_state = data["model_state"]
-#model loading...
+
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
@@ -42,7 +40,7 @@ def get_response(msg):
     _, predicted = torch.max(output, dim=1)
 
     tag = tags[predicted.item()]
-    #filter to normalize weights
+
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     if prob.item() > 0.75:

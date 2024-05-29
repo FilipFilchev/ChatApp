@@ -17,8 +17,7 @@ nltk.download('punkt')
 
 file_path = os.path.join(os.path.dirname(__file__), 'intents.json')
 print("File path:", file_path)
-
-with open('intents.json', 'r') as f:
+with open('/Users/mac/Desktop/GIT/ToCommit/ChatAssistant+Bot+API/ChatBot/ChatBot/intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
@@ -132,7 +131,7 @@ data = {
 "tags": tags
 }
 
-FILE = "financialdata.pth"
+FILE = "newdata.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')

@@ -22,6 +22,8 @@
 - Recommendation:
 - - freeze model parameters and use pretrained model feeding it with your dataset to embbed context
 
+![embedded](streamlitUI.png)
+
 ### Visualisation of the words as vector-neighbors
 
 ![vector](vector_words.png)
